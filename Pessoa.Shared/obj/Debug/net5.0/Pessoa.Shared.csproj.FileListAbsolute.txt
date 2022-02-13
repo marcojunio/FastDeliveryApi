@@ -1,0 +1,12 @@
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\bin\Debug\net5.0\Pessoa.Shared.deps.json
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\bin\Debug\net5.0\Pessoa.Shared.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\bin\Debug\net5.0\ref\Pessoa.Shared.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\bin\Debug\net5.0\Pessoa.Shared.pdb
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.AssemblyInfoInputs.cache
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.AssemblyInfo.cs
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.csproj.CoreCompileInputs.cache
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\ref\Pessoa.Shared.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.pdb
+C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.csprojAssemblyReference.cache

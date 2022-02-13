@@ -1,0 +1,15 @@
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\bin\Debug\net5.0\Pessoa.Domain.deps.json
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\bin\Debug\net5.0\Pessoa.Domain.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\bin\Debug\net5.0\ref\Pessoa.Domain.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\bin\Debug\net5.0\Pessoa.Domain.pdb
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\bin\Debug\net5.0\Pessoa.Shared.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\bin\Debug\net5.0\Pessoa.Shared.pdb
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.csprojAssemblyReference.cache
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.AssemblyInfoInputs.cache
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.AssemblyInfo.cs
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.csproj.CopyComplete
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\ref\Pessoa.Domain.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Domain\obj\Debug\net5.0\Pessoa.Domain.pdb

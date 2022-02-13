@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Pessoa.Domain/1.0.0": {
+        "dependencies": {
+          "Pessoa.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Pessoa.Domain.dll": {}
+        }
+      },
+      "Pessoa.Shared/1.0.0": {
+        "runtime": {
+          "Pessoa.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pessoa.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pessoa.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
