@@ -29,7 +29,9 @@ namespace Pessoa.Infra.Repository{
 
         public async Task<ICollection<PessoaEntity>> GetAll()
         {
-           return await _pessoaContext.Pessoas.ToListAsync();
+           return await _pessoaContext.Pessoas
+           .AsNoTracking()
+           .ToListAsync();
         }
 
         public async Task<PessoaEntity> GetById(string id)

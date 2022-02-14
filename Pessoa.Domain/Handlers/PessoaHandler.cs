@@ -27,9 +27,9 @@ namespace Pessoa.Domain.Handlers{
 
             if(!valid.isValid())
                 return new GenericCommandResult{ 
-                    Data = valid.Errors,
+                    Data = null,
                     Success = false,
-                    Message = "Bad request"
+                    Messages = valid.Errors
                 };
 
             var pessoa = new PessoaEntity(command.Nome,command.Sobrenome,new DocumentoVo(command.Documento),command.Idade,new EmailVo(command.Email));
@@ -38,31 +38,39 @@ namespace Pessoa.Domain.Handlers{
 
             return new GenericCommandResult{ 
                 Success = true,
-                Message = "Request success",
+                Message = null,
                 Data = pessoa 
             };
         }
 
         public async Task<ICommandResult> Handle(CommandUpdatePessoa command)
         {
-             var valid = new PessoaValidator()
-                .EmailIsValid(command.Email);
+            var pessoa = await _pessoaEntityRepository.GetById(command.Id);
+
+            if(pessoa == null)
+                return new GenericCommandResult{ 
+                    Data = null,
+                    Success = false,
+                    Message = "Nenhuma pessoa encontrada."
+                };
+
+            var valid = new PessoaValidator()
+              .EmailIsValid(command.Email);
 
             if(!valid.isValid())
                 return new GenericCommandResult{ 
-                    Data = valid.Errors,
+                    Data = null,
                     Success = false,
-                    Message = "Bad request"
+                    Messages = valid.Errors
                 };
 
-            var pessoa = await _pessoaEntityRepository.GetById(command.Id);
             pessoa.MudarEmail(new EmailVo(command.Email));
 
             await _pessoaEntityRepository.Update(pessoa);
 
             return new GenericCommandResult{ 
                 Success = true,
-                Message = "Request success",
+                Message = null,
                 Data = pessoa 
             };
         }
