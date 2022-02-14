@@ -38,7 +38,10 @@ namespace Pessoa.Domain.Handlers{
 
             return new GenericCommandResult{ 
                 Success = true,
-                Message = null,
+                Messages = new List<string>
+                {
+                    "Cadastro feito com sucesso."
+                },
                 Data = pessoa 
             };
         }
@@ -51,7 +54,10 @@ namespace Pessoa.Domain.Handlers{
                 return new GenericCommandResult{ 
                     Data = null,
                     Success = false,
-                    Message = "Nenhuma pessoa encontrada."
+                    Messages = new List<string>
+                    {
+                        "Nenhuma pessoa encontrada."
+                    }
                 };
 
             var valid = new PessoaValidator()
@@ -70,7 +76,10 @@ namespace Pessoa.Domain.Handlers{
 
             return new GenericCommandResult{ 
                 Success = true,
-                Message = null,
+                Messages = new List<string> 
+                { 
+                    "Cadastro alterado com sucesso."
+                },
                 Data = pessoa 
             };
         }
