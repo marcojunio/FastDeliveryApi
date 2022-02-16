@@ -1,4 +1,3 @@
-using Pessoa.Domain.Entities;
 using Pessoa.Domain.ValueObjects;
 using Pessoa.Shared.ContractsValidators;
 

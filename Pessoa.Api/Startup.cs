@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Pessoa.Infra.Context;
+using Pessoa.Shared.Configurations;
 
 namespace Pessoa.Api
 {
@@ -24,6 +26,17 @@ namespace Pessoa.Api
 
             services.AddDbContext<PessoaContext>(options => options.UseInMemoryDatabase("pessoacontext"));
             ConfigureDi.Inject(services);
+
+            var tokenConfigs = Configuration.GetSection("TokenConfiguration").Get<TokenConfiguration>();
+            services.AddSingleton(tokenConfigs);
+
+            ConfigureAuth.Inject(services,tokenConfigs);
+
+            services.AddAuthentication(auth => {
+                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -45,6 +58,7 @@ namespace Pessoa.Api
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
