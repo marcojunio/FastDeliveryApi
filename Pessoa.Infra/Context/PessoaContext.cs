@@ -12,7 +12,9 @@ namespace Pessoa.Infra.Context{
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PessoaMapping());
+            modelBuilder.ApplyConfiguration(new UserMapping());
         }
         public DbSet<PessoaEntity> Pessoas { get;set;}
+        public DbSet<UserEntity> Users { get;set;}
     }
 }

@@ -23,9 +23,10 @@ namespace Pessoa.Api{
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidAudience = token.Audience,
+                    ValidIssuer = token.Issuer,
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidateLifetime = true
                 };
             });
         }

@@ -8,10 +8,19 @@ namespace Pessoa.Domain.Validators{
         {
         }
 
-        public UserValidator LoginIsValid(string login){
+        public UserValidator LoginIsValid(string login,string mensagem){
             
             if(string.IsNullOrEmpty(login))
-                Errors.Add("Login obrigatório.");
+                Errors.Add(mensagem);
+
+            return this;
+        }
+
+
+         public UserValidator PasswordIsValid(string password,string mensagem){
+            
+            if(string.IsNullOrEmpty(password))
+                Errors.Add(mensagem);
 
             return this;
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GTl2Isr3yzGvir7HSUx/BTwB/mGd45/nqSXMv60mL/CMPiec4yDI+O19bqqJwj3QL6VcC55NL3rqDBEfbJIAvQ==",
+  "dgSpecHash": "E81NCco96YYl5pEwsIYBx4+Bn8zV5eNaZnCn3J9W+wYlGZyqZTXglS4wtfxY+he4WxmVWDtzAcdtNQdkSDlk8A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj",
+  "projectFilePath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.14\\microsoft.aspnetcore.authentication.jwtbearer.5.0.14.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

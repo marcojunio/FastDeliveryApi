@@ -46,3 +46,5 @@ C:\Users\marco\Desktop\Pessoa\Pessoa.Api\bin\Debug\net5.0\Microsoft.IdentityMode
 C:\Users\marco\Desktop\Pessoa\Pessoa.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\marco\Desktop\Pessoa\Pessoa.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\marco\Desktop\Pessoa\Pessoa.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Api\bin\Debug\net5.0\Pessoa.Services.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Api\bin\Debug\net5.0\Pessoa.Services.pdb

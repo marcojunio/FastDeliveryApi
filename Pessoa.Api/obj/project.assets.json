@@ -414,6 +414,21 @@
           "bin/placeholder/Pessoa.Infra.dll": {}
         }
       },
+      "Pessoa.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.14",
+          "Pessoa.Domain": "1.0.0",
+          "Pessoa.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pessoa.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pessoa.Services.dll": {}
+        }
+      },
       "Pessoa.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1196,6 +1211,11 @@
       "path": "../Pessoa.Infra/Pessoa.Infra.csproj",
       "msbuildProject": "../Pessoa.Infra/Pessoa.Infra.csproj"
     },
+    "Pessoa.Services/1.0.0": {
+      "type": "project",
+      "path": "../Pessoa.Services/Pessoa.Services.csproj",
+      "msbuildProject": "../Pessoa.Services/Pessoa.Services.csproj"
+    },
     "Pessoa.Shared/1.0.0": {
       "type": "project",
       "path": "../Pessoa.Shared/Pessoa.Shared.csproj",
@@ -1209,6 +1229,7 @@
       "Microsoft.EntityFrameworkCore.InMemory >= 5.0.14",
       "Pessoa.Domain >= 1.0.0",
       "Pessoa.Infra >= 1.0.0",
+      "Pessoa.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1249,6 +1270,9 @@
             },
             "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Infra\\Pessoa.Infra.csproj": {
               "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Infra\\Pessoa.Infra.csproj"
+            },
+            "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj": {
+              "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj"
             }
           }
         }

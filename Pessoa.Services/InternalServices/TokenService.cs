@@ -27,7 +27,10 @@ namespace Pessoa.Services.InternalServices{
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name, entity.Nome),
-                    new Claim(ClaimTypes.Role, entity.Role)
+                    new Claim(ClaimTypes.Role, entity.Role),
+                    new Claim("Id",entity.Id),
+                    new Claim(JwtRegisteredClaimNames.Aud,_tokenConfiguration.Audience),
+                    new Claim(JwtRegisteredClaimNames.Iss,_tokenConfiguration.Issuer),
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

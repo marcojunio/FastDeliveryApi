@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pessoa.Domain.Commands;
 using Pessoa.Domain.Handlers;
@@ -9,6 +10,7 @@ namespace Pessoa.Api.Controllers{
 
     [ApiController]
     [Route("api/v1/pessoa")]
+    [Authorize(Roles = "User")]
     public class PessoaController : ControllerBase
     {
         [HttpPost]

@@ -38,6 +38,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.14",
           "Pessoa.Domain": "1.0.0",
           "Pessoa.Infra": "1.0.0",
+          "Pessoa.Services": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -637,6 +638,19 @@
         },
         "compile": {
           "Pessoa.Infra.dll": {}
+        }
+      },
+      "Pessoa.Services/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.14",
+          "Pessoa.Domain": "1.0.0",
+          "Pessoa.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Pessoa.Services.dll": {}
+        },
+        "compile": {
+          "Pessoa.Services.dll": {}
         }
       },
       "Pessoa.Shared/1.0.0": {
@@ -2571,6 +2585,11 @@
       "sha512": ""
     },
     "Pessoa.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pessoa.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

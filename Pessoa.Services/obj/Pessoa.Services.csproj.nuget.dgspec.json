@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj": {}
+    "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj": {}
   },
   "projects": {
-    "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj": {
+    "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj",
         "projectName": "Pessoa.Domain",
-        "projectPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj",
+        "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj",
         "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\obj\\",
+        "outputPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj": {
-                "projectPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj"
+              "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj": {
+                "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj": {
+    "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj",
         "projectName": "Pessoa.Services",
-        "projectPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj",
+        "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\Pessoa.Services.csproj",
         "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\obj\\",
+        "outputPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -87,14 +87,18 @@
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj": {
-                "projectPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj"
+              "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj": {
+                "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Domain\\Pessoa.Domain.csproj"
+              },
+              "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj": {
+                "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj"
               }
             }
           }
@@ -133,14 +137,14 @@
         }
       }
     },
-    "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj": {
+    "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj",
         "projectName": "Pessoa.Shared",
-        "projectPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj",
+        "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\Pessoa.Shared.csproj",
         "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\obj\\",
+        "outputPath": "C:\\Users\\marco\\Desktop\\Pessoa\\Pessoa.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

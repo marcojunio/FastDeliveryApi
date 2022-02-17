@@ -102,3 +102,12 @@ C:\Users\marco\Desktop\Pessoa\Pessoa.Test\obj\Debug\net5.0\Pessoa.Test.dll
 C:\Users\marco\Desktop\Pessoa\Pessoa.Test\obj\Debug\net5.0\ref\Pessoa.Test.dll
 C:\Users\marco\Desktop\Pessoa\Pessoa.Test\obj\Debug\net5.0\Pessoa.Test.pdb
 C:\Users\marco\Desktop\Pessoa\Pessoa.Test\obj\Debug\net5.0\Pessoa.Test.genruntimeconfig.cache
+c:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Pessoa.Services.dll
+c:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Pessoa.Services.pdb
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\marco\Desktop\Pessoa\Pessoa.Test\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

@@ -9,4 +9,3 @@ C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.cspro
 C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.dll
 C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\ref\Pessoa.Shared.dll
 C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.pdb
-C:\Users\marco\Desktop\Pessoa\Pessoa.Shared\obj\Debug\net5.0\Pessoa.Shared.csprojAssemblyReference.cache
