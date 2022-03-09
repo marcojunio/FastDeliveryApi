@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/marcos/Documentos/PessoaApi/source/Pessoa.Services/Pessoa.Services.csproj": {}
+    "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Services\\Pessoa.Services.csproj": {}
   },
   "projects": {
-    "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/Pessoa.Domain.csproj": {
+    "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\Pessoa.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/Pessoa.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\Pessoa.Domain.csproj",
         "projectName": "Pessoa.Domain",
-        "projectPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/Pessoa.Domain.csproj",
-        "packagesPath": "/home/marcos/.nuget/packages/",
-        "outputPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/obj/",
+        "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\Pessoa.Domain.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj": {
-                "projectPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj"
+              "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj": {
+                "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj"
               }
             }
           }
@@ -56,37 +62,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.212\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marcos/Documentos/PessoaApi/source/Pessoa.Services/Pessoa.Services.csproj": {
+    "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Services\\Pessoa.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Services/Pessoa.Services.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Services\\Pessoa.Services.csproj",
         "projectName": "Pessoa.Services",
-        "projectPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Services/Pessoa.Services.csproj",
-        "packagesPath": "/home/marcos/.nuget/packages/",
-        "outputPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Services/obj/",
+        "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Services\\Pessoa.Services.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/Pessoa.Domain.csproj": {
-                "projectPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/Pessoa.Domain.csproj"
+              "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\Pessoa.Domain.csproj": {
+                "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\Pessoa.Domain.csproj"
               },
-              "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj": {
-                "projectPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj"
+              "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj": {
+                "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj"
               }
             }
           }
@@ -121,26 +133,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.212\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj": {
+    "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj",
         "projectName": "Pessoa.Shared",
-        "projectPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj",
-        "packagesPath": "/home/marcos/.nuget/packages/",
-        "outputPath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/obj/",
+        "projectPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -173,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.212\\RuntimeIdentifierGraph.json"
         }
       }
     }
