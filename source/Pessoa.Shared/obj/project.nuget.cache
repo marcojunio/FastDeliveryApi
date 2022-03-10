@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Zy6MQJ22U2jRJlcr1iJyMKUBcDSiVtR/QHTdoXterbq7jCynKbqjys/51Q/p1+lChCVHPCt3kFHe4G+TjJhew==",
+  "dgSpecHash": "au4v6vsYGB//X3xhnHv5vEvnE0broupqVsMIqfdsnufOwrmqhTvX8xsR9qq/L8FJbsqjWV10Yy0k7iUvWXfN3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Shared\\Pessoa.Shared.csproj",
+  "projectFilePath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Shared/Pessoa.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

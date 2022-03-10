@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CWDaywD2N41uoCcjCTCMqMOu1LF91fvv7IMXQZFJmSG/7nGeLJ/Vy9haisPKH8qEFly+sAaGuLZd+tq3naH5zQ==",
+  "dgSpecHash": "DVJIs2UB8Z1oldxVDGvI815jrbfluh4xtXFQKQNII1Hct1JMUocv14aefah+Vqtg9eMZtasTUs0NgZUios9mRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marco\\Desktop\\Pessoa\\source\\Pessoa.Domain\\Pessoa.Domain.csproj",
+  "projectFilePath": "/home/marcos/Documentos/PessoaApi/source/Pessoa.Domain/Pessoa.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
