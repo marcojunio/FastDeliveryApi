@@ -23,21 +23,23 @@ namespace Pessoa.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddDbContext<PessoaContext>(options => options.UseInMemoryDatabase("pessoacontext"));
             ConfigureDi.Inject(services);
 
             var tokenConfigs = Configuration.GetSection("TokenConfiguration").Get<TokenConfiguration>();
             services.AddSingleton(tokenConfigs);
 
-            ConfigureAuth.Inject(services,tokenConfigs);
+            ConfigureAuth.Inject(services, tokenConfigs);
 
-            services.AddAuthentication(auth => {
+            services.AddAuthentication(auth =>
+            {
                 auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             });
 
             services.AddControllers();
+            services.AddCors();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pessoa.Api", Version = "v1" });
@@ -54,6 +56,11 @@ namespace Pessoa.Api
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pessoa.Api v1"));
             }
 
+            app.UseCors(c =>
+            {
+                c.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -61,10 +68,7 @@ namespace Pessoa.Api
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
