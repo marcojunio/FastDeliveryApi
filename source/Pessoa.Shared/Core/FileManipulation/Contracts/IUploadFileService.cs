@@ -11,13 +11,13 @@ namespace Pessoa.Shared.Core.FileManipulation.Contracts
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
-        Task<UploadFileInformation> UploadFile(IFormFile file);
+        Task<UploadFileInformation> UploadFile(IFormFile file, string customerCode, string userName);
         
         /// <summary>
         /// Make upload from many files
         /// </summary>
         /// <param name="files"></param>
         /// <returns></returns>
-        Task<List<UploadFileInformation>> UploadFiles(List<IFormFile> files);
+        Task<List<UploadFileInformation>> UploadFiles(List<IFormFile> files, string customerCode, string userName);
     }
 }

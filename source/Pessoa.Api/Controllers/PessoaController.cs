@@ -1,10 +1,13 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pessoa.Domain.Commands;
 using Pessoa.Domain.Handlers;
 using Pessoa.Domain.Repositories;
 using Pessoa.Shared.ContractsCommand;
+using Pessoa.Shared.Core.FileManipulation.Contracts;
+using Pessoa.Shared.Helpers;
 
 namespace Pessoa.Api.Controllers{ 
 
@@ -69,6 +72,18 @@ namespace Pessoa.Api.Controllers{
             await pessoaEntityRepository.Delete(id);
             return Ok();
         }
+
+        [HttpPost]
+        [RequestFormLimits(ValueLengthLimit = int.MaxValue, MultipartBodyLengthLimit = int.MaxValue)]
+        [Route("upload-file")]
+        public async Task<IActionResult> UploadSingleFile([FromServices] IUploadFileService uploadService,[FromForm] IFormFile file)
+        {
+            var user = HttpContextHelper.GetClaims(User.Claims);
+            var response = await uploadService.UploadFile(file,user?.CustumerId,user?.Name);
+
+            return Ok(response);
+        }
+
 
     }
 }

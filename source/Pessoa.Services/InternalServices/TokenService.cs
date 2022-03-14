@@ -28,7 +28,7 @@ namespace Pessoa.Services.InternalServices{
                 {
                     new Claim(ClaimTypes.Name, entity.Nome),
                     new Claim(ClaimTypes.Role, entity.Role),
-                    new Claim("Id",entity.Id),
+                    new Claim("user_id",entity.Id),
                     new Claim(JwtRegisteredClaimNames.Aud,_tokenConfiguration.Audience),
                     new Claim(JwtRegisteredClaimNames.Iss,_tokenConfiguration.Issuer),
                 }),

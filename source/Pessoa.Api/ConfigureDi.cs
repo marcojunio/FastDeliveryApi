@@ -4,6 +4,9 @@ using Pessoa.Domain.Repositories;
 using Pessoa.Domain.Services;
 using Pessoa.Infra.Repository;
 using Pessoa.Services.InternalServices;
+using Pessoa.Shared.Core.FileManipulation.Contracts;
+using Pessoa.Shared.Core.FileManipulation.Implementations;
+using Pessoa.Shared.Core.FileManipulation.Implementations.Upload;
 
 namespace Pessoa.Api
 {
@@ -11,17 +14,19 @@ namespace Pessoa.Api
     {
         public static void Inject(IServiceCollection service)
         {
-
+            service.AddScoped<IFileService,FileService>();
+            service.AddScoped<IUploadFileService,UploadFileService>();
+            
             //Repositories
-            service.AddTransient<IPessoaEntityRepository,PessoaRepository>();
-            service.AddTransient<IUserEntityRepository,UserRepository>();
+            service.AddScoped<IPessoaEntityRepository,PessoaRepository>();
+            service.AddScoped<IUserEntityRepository,UserRepository>();
             
             //Handlers
-            service.AddTransient<PessoaHandler,PessoaHandler>();
-            service.AddTransient<UserHandler,UserHandler>();
+            service.AddScoped<PessoaHandler,PessoaHandler>();
+            service.AddScoped<UserHandler,UserHandler>();
 
             //Services
-            service.AddTransient<ITokenService,TokenService>();
+            service.AddScoped<ITokenService,TokenService>();
         }
     }
 }
