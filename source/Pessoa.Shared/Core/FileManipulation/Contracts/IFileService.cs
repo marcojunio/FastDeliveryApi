@@ -54,5 +54,12 @@ namespace Pessoa.Shared.Core.FileManipulation.Contracts
         /// Limpa as pastas temporárias antigas
         /// </summary>
         void CleanPathsWithDateFmtControl(string rootPath, DateTime limitDate);
+
+
+        /// <summary>
+        /// Create path for client
+        /// </summary>
+        /// <param name="path"></param>
+        string CratePathForClient(string path);
     }
 }

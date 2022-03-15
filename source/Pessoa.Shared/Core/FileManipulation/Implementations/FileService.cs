@@ -55,10 +55,19 @@ namespace Pessoa.Shared.Core.FileManipulation.Implementations
             if (String.IsNullOrEmpty(fileExtension))
                 fileExtension = ".tmp";
 
-            var code = customerCode?.ToString() ?? "";
-            var user = StringHelper.MakeAlphaNumeric(userName, new[] { '_', '-' }) ?? "usr";
+            var path = Path.Combine(CratePathForClient(customerCode), userName + Guid.NewGuid().ToString() + fileExtension);
 
-            return $"{code}_{user}_{Guid.NewGuid().ToString()}{fileExtension}";
+            return path;
+        }
+
+        public string CratePathForClient(string customerCode)
+        {
+            var path = Path.Combine(GetRootPath(), customerCode);
+
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            return path;
         }
 
         public void CleanTempPath()

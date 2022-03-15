@@ -6,8 +6,6 @@ namespace Pessoa.Infra.Repository{
 
     public class PessoaRepository : Repository<PessoaEntity>,IPessoaEntityRepository
     {
-        private readonly PessoaContext _pessoaContext;
-        
         public PessoaRepository(PessoaContext pessoaContext):
             base(pessoaContext){ 
        }
