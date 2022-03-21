@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -9,8 +11,8 @@ using Pessoa.Shared.ContractsCommand;
 using Pessoa.Shared.Core.FileManipulation.Contracts;
 using Pessoa.Shared.Helpers;
 
-namespace Pessoa.Api.Controllers{ 
-
+namespace Pessoa.Api.Controllers
+{
     [ApiController]
     [Route("api/v1/pessoa")]
     [Authorize(Roles = "User")]
@@ -18,14 +20,17 @@ namespace Pessoa.Api.Controllers{
     {
         [HttpPost]
         public async Task<IActionResult> Save(
-        [FromBody] CommandCreatePessoa command,
-        [FromServices] PessoaHandler handler)
-        { 
-            var result = (GenericCommandResult) await handler.Handle(command);
-            
-            if(result.Success){
+            [FromBody] CommandCreatePessoa command,
+            [FromServices] PessoaHandler handler)
+        {
+            var result = (GenericCommandResult)await handler.Handle(command);
+
+            if (result.Success)
+            {
                 return Ok(result);
-            }else{
+            }
+            else
+            {
                 return BadRequest(result);
             }
         }
@@ -33,8 +38,8 @@ namespace Pessoa.Api.Controllers{
 
         [HttpGet]
         public async Task<IActionResult> GetAll(
-        [FromServices] IPessoaEntityRepository pessoaEntityRepository)
-        { 
+            [FromServices] IPessoaEntityRepository pessoaEntityRepository)
+        {
             var result = await pessoaEntityRepository.GetAll();
             return Ok(result);
         }
@@ -42,16 +47,16 @@ namespace Pessoa.Api.Controllers{
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetAll(string id,
-        [FromServices] IPessoaEntityRepository pessoaEntityRepository)
-        { 
+            [FromServices] IPessoaEntityRepository pessoaEntityRepository)
+        {
             var result = await pessoaEntityRepository.GetById(id);
             return Ok(result);
         }
 
         [HttpPut]
         public async Task<IActionResult> Update(
-        [FromBody] CommandUpdatePessoa command,
-        [FromServices] PessoaHandler handler)
+            [FromBody] CommandUpdatePessoa command,
+            [FromServices] PessoaHandler handler)
         {
             var result = (GenericCommandResult)await handler.Handle(command);
 
@@ -67,7 +72,8 @@ namespace Pessoa.Api.Controllers{
 
         [HttpDelete]
         [Route("{id}")]
-        public async Task<IActionResult> Update(string id,[FromServices] IPessoaEntityRepository pessoaEntityRepository)
+        public async Task<IActionResult> Update(string id,
+            [FromServices] IPessoaEntityRepository pessoaEntityRepository)
         {
             await pessoaEntityRepository.Delete(id);
             return Ok();
@@ -76,14 +82,24 @@ namespace Pessoa.Api.Controllers{
         [HttpPost]
         [RequestFormLimits(ValueLengthLimit = int.MaxValue, MultipartBodyLengthLimit = int.MaxValue)]
         [Route("upload-file")]
-        public async Task<IActionResult> UploadSingleFile([FromServices] IUploadFileService uploadService,[FromForm] IFormFile file)
+        public async Task<IActionResult> UploadSingleFile([FromServices] IUploadFileService uploadService,
+            [FromForm] IFormFile file)
         {
             var user = HttpContextHelper.GetClaims(User.Claims);
-            var response = await uploadService.UploadFile(file,user?.CustumerId,user?.Name);
+            var response = await uploadService.UploadFile(file, user?.CustumerId, user?.Name);
 
             return Ok(response);
         }
 
-
+        [HttpPost]
+        [RequestFormLimits(ValueLengthLimit = int.MaxValue, MultipartBodyLengthLimit = int.MaxValue)]
+        [Route("upload-many-files")]
+        public async Task<IActionResult> UploadManyFiles([FromServices] IUploadFileService uploadFileService,
+            [FromForm] List<IFormFile> files)
+        {
+            var user = HttpContextHelper.GetClaims(User.Claims);
+            var response = await uploadFileService.UploadFiles(files, user.CustumerId, user.Name);
+            return Ok(response);
+        }
     }
 }
