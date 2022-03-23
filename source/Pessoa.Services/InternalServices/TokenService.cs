@@ -26,7 +26,7 @@ namespace Pessoa.Services.InternalServices{
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, entity.Nome),
+                    new Claim(ClaimTypes.Name, entity.Name),
                     new Claim(ClaimTypes.Role, entity.Role),
                     new Claim("user_id",entity.Id),
                     new Claim(JwtRegisteredClaimNames.Aud,_tokenConfiguration.Audience),

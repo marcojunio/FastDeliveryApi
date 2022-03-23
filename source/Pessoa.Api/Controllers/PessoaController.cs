@@ -26,13 +26,9 @@ namespace Pessoa.Api.Controllers
             var result = (GenericCommandResult)await handler.Handle(command);
 
             if (result.Success)
-            {
                 return Ok(result);
-            }
-            else
-            {
-                return BadRequest(result);
-            }
+
+            return BadRequest(result);
         }
 
 
@@ -61,13 +57,9 @@ namespace Pessoa.Api.Controllers
             var result = (GenericCommandResult)await handler.Handle(command);
 
             if (result.Success)
-            {
                 return Ok(result);
-            }
-            else
-            {
-                return BadRequest(result);
-            }
+
+            return BadRequest(result);
         }
 
         [HttpDelete]
